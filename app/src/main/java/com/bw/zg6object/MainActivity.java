@@ -3,6 +3,7 @@ package com.bw.zg6object;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,9 +12,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //6666
-        //111
-        //777
 
+        Log.i("zxw", "onCreate: ");
     }
 }
