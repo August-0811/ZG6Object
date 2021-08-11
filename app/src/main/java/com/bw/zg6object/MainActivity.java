@@ -11,12 +11,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //6666
-        //111
-        //777
-
-
-        //222222222222
+        //分支
 
     }
 }
