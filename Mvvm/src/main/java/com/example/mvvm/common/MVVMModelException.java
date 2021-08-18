@@ -7,5 +7,8 @@ package com.example.mvvm.common;
  * @Date 2021/8/18 0018 14:14
  * @Version 1.0
  */
-public class MVVMModelException {
+public class MVVMModelException extends RuntimeException {
+    public MVVMModelException(String msg){
+        super(msg);
+    }
 }

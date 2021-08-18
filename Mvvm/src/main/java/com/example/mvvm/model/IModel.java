@@ -1,4 +1,4 @@
-package com.example.mvvm.view;
+package com.example.mvvm.model;
 
 /**
  * @ClassName IModel

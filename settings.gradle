@@ -1,4 +1,4 @@
 rootProject.name = "ZG6Object"
-include ':app'
+include ':app', ':Mvvm'
 include ':Resources'
 include ':Common'

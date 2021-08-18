@@ -10,10 +10,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String a="wwww";
-        //aaaaa
-        Log.i("cjj", "onCreate: ");
-        //zxw合并分支
-        //cjj合并分支
+
     }
 }
