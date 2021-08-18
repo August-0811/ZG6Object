@@ -12,7 +12,11 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Common" />
+<<<<<<< HEAD
             <option value="$PROJECT_DIR$/Mvvm" />
+=======
+            <option value="$PROJECT_DIR$/Net" />
+>>>>>>> main
             <option value="$PROJECT_DIR$/Resources" />
             <option value="$PROJECT_DIR$/app" />
           </set>

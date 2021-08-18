@@ -2,6 +2,7 @@ plugins {
     id 'com.android.library'
 }
 def  versions=rootProject.ext.dependenciesVersion
+def  libs=rootProject.ext.dependencies
 android {
     compileSdkVersion versions.compileSdkVersion
     buildToolsVersion versions.buildToolsVersion
