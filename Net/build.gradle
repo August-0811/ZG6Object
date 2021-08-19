@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-plugins {
-    id 'com.android.library'
-}
-=======
 apply plugin: 'com.android.library'
->>>>>>> cdv
+
 
 def versions=rootProject.ext.dependenciesVersion
 def libs=rootProject.ext.dependencies
