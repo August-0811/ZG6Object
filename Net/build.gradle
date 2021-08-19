@@ -1,8 +1,8 @@
-plugins {
-    id 'com.android.application'
-}
+apply plugin: 'com.android.library'
+
 def versions=rootProject.ext.dependenciesVersion
 def libs=rootProject.ext.dependencies
+def url=rootProject.ext.urls
 android {
     compileSdkVersion versions.compileSdkVersion
     buildToolsVersion versions.buildToolsVersion
@@ -14,12 +14,17 @@ android {
         versionName versions.versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
         release {
+            buildConfigField("String","BASEURL","\""+url.release+"\"")
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            buildConfigField("String","BASEURL","\""+url.debug+"\"")
         }
     }
     compileOptions {
@@ -32,14 +37,11 @@ dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
-    implementation project(path: ':Resources')
-    implementation project(path: ':Common')
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
-
-
-
+    api libs.retrofitgson
+    api libs.retrofitrxjava
+    api libs.okhttplog
 }

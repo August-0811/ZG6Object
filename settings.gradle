@@ -2,3 +2,4 @@ rootProject.name = "ZG6Object"
 include ':app', ':Mvvm'
 include ':Resources'
 include ':Common'
+include ':Net'
