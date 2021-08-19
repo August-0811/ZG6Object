@@ -25,10 +25,17 @@ ext{
             fastjsonAndroid: "com.alibaba:fastjson:$version.fastjsonAndroid",
             fastjson:"com.alibaba:fastjson:$version.fastjson",
 
-            greenDao:"org.greenrobot:greendao:$version.greenDao"
+            greenDao:"org.greenrobot:greendao:$version.greenDao",
+
+            //MVVM框架
+            mvvmCore:"com.github.XCH01:MyMyZG6Object:"
+
     ]
 
     urls=[
+            debug:"http://39.98.153.96:8080/",
+            release:"http://39.98.153.96:8080/",
+            testServerUrl:"http://39.98.153.96:8080/",
             offline:"",
             online:"",
             test:""

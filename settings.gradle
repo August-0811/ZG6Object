@@ -2,3 +2,6 @@ rootProject.name = "ZG6Object"
 include ':app', ':Mvvm'
 include ':Resources'
 include ':Common'
+include ':Resource'
+include ':Net'
+include ':usercenter'
